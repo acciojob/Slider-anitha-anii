@@ -74,7 +74,7 @@ const App = () => {
               id={`person-${index}-image`}
             />
             <h2 id={`person-${index}-index`}>{review.name}</h2>
-            <p>{review.title}</p>
+            {/* <p>{review.title}</p> */}
             {/* <p>{review.name}</p> */}
           </div>
         ))}
