@@ -75,7 +75,7 @@ const App = () => {
             />
             <h2 id={`person-${index}-index`}>{review.name}</h2>
             <p>{review.title}</p>
-            <p>{review.quote}</p>
+            {/* <p>{review.name}</p> */}
           </div>
         ))}
       </div>
