@@ -41,7 +41,7 @@ const reviewsData = [
 ];
 
 const App = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % reviewsData.length);
@@ -65,6 +65,7 @@ const App = () => {
         {reviewsData.map((review, index) => (
           <div
             key={review.id}
+            id={`person-${index}`} 
             className={`slide ${index === currentSlide ? 'active' : ''}`}
           >
             <img
